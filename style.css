@@ -338,7 +338,6 @@ section {
 }
 
 .guideline {
-  border-left: 3px solid #3b82f6;
   padding: 20px 24px;
   background: #1e293b;
   border-radius: 0 var(--radius) var(--radius) 0;
