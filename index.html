@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Is Open Source Right for Your Business?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Hero -->
+  <header id="hero">
+    <div class="container">
+      <h1>Is Open Source Right<br>for Your Business?</h1>
+      <p>Open source is a potent tool that can shape your industry or supercharge adoption. Find out if it's right for you.</p>
+    </div>
+  </header>
+
+  <!-- Info -->
+  <section id="info">
+    <div class="container">
+      <h2 class="section-title">Understanding Open Source</h2>
+      <p class="section-subtitle">Open source is a powerful tool in any software leader's strategic toolkit. Before deciding whether to use it, it helps to understand what it is and how other companies have approached it.</p>
+
+      <div class="research-quote">
+        <blockquote>"It pays to be more open. Opening up one's process for developing this foundational technology in your organization can enlist the voluntary contributions of many, many other talented and creative developers. There is value in unleashing this cognitive diversity on your behalf."</blockquote>
+        <cite>— Chesbrough, <em>Measuring the Economic Value of Open Source</em>, Linux Foundation (2023)</cite>
+      </div>
+
+      <div class="info-grid">
+
+        <div class="info-card">
+          <h3>What is Open Source Software?</h3>
+          <p>Open source software (OSS) is code made publicly available for anyone to view, use, modify, and distribute. Rather than keeping your codebase proprietary, you release it under a license that grants these freedoms to the community at large. The question of whether to do this is fundamentally a question of whether your organization can extract more value from democratizing your industry knowledge than the value you would have extracted from keeping it secret.</p>
+        </div>
+
+        <div class="info-card">
+          <h3>Why Do Companies Open Source Their Code?</h3>
+          <p>Companies like RedHat, Google, Elasticsearch, and MySQL have all found success with OSS, and many continue to do so today. The core of the decision is a straightforward value calculation: can you make more by providing offerings that complement your open source product than you could have made selling the product itself? When the answer is yes, open source becomes one of the most powerful moves available to a software organization.</p>
+          <div class="research-quote">
+            <blockquote>"Some organizations are learning to use OSS strategically, to shape the environment for the organization in ways that are more favorable to that organization."</blockquote>
+            <cite>— Chesbrough, <em>Measuring the Economic Value of Open Source</em>, Linux Foundation (2023)</cite>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <h3>Examples in the Wild</h3>
+          <div class="examples-grid">
+            <div class="example-chip">
+              <div class="name">Linux</div>
+              <div class="desc">The open source kernel powering most of the world's servers, phones, and supercomputers.</div>
+            </div>
+            <div class="example-chip">
+              <div class="name">Kubernetes</div>
+              <div class="desc">Open sourced by Google to ease cloud switching, making it harder for AWS and Azure to lock customers in.</div>
+            </div>
+            <div class="example-chip">
+              <div class="name">Elasticsearch</div>
+              <div class="desc">Open source search engine; Elastic builds its business around enterprise support and managed hosting.</div>
+            </div>
+            <div class="example-chip">
+              <div class="name">Netscape / Firefox</div>
+              <div class="desc">A cautionary tale: Netscape's code was so unmaintainable that the release required a full rewrite before it could succeed as Firefox.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Decision -->
+  <section id="decision-tree">
+    <div class="container">
+      <h2 class="section-title">Should You Open Source Your Code?</h2>
+      <p class="section-subtitle">Open source is a potent tool, but it isn't right for every situation. Answer each question honestly.</p>
+
+      <!-- Q1 -->
+      <div class="question visible" id="q1">
+        <div class="question-card">
+          <p class="question-number">Question 1 of 3</p>
+          <h3>Do you have a clear route to profit that doesn't depend on keeping your code proprietary?</h3>
+          <p class="subtext">
+            Most scenarios where open source makes financial sense fall into one of two categories.<br><br>
+            <strong>The razor-blade model</strong> - named after razor manufacturers who sold razors at a loss to profit from the blades. Software companies like RedHat, Canonical, Grafana, and Elasticsearch make their main product open source, then build a business around enterprise support, managed hosting, and premium features for that familiar product.<br><br>
+            <strong>The "leveling the playing field" model</strong> - rarer, but potentially market-moving. The clearest example is Google's open sourcing of Kubernetes. At the time, Google's cloud business was lagging, and vendor lock-in was working against them. It benefited Google for Kubernetes, and its powerful ability to ease the pain of switching cloud providers, to be in the hands of as many enterprise customers as possible. The result was a smoother path away from AWS and Azure, and toward Google Cloud.
+          </p>
+          <div class="btn-group">
+            <button class="btn-answer yes" data-answer="yes">Yes</button>
+            <button class="btn-answer no" data-answer="no">No</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q2 -->
+      <div class="question hidden" id="q2">
+        <div class="question-card">
+          <p class="question-number">Question 2 of 3</p>
+          <h3>Will the profits from your supplementary model outweigh the revenue you'd lose by giving the code away?</h3>
+          <p class="subtext">
+            Can you make more on the blades than you lose on the razor? This calculation is the most important, and most difficulat, part.
+          </p>
+          <div class="research-quote">
+            <blockquote>"In general, it will make sense if the increase in profit in the proprietary complementary segment offsets any profit that would have been made in the primary segment, had it not been converted to open source."</blockquote>
+            <cite>— Lerner &amp; Tirole, Journal of Economic Perspectives (2005)</cite>
+          </div>
+          <div class="btn-group">
+            <button class="btn-answer yes" data-answer="yes">Yes</button>
+            <button class="btn-answer no" data-answer="no">No</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q3 -->
+      <div class="question hidden" id="q3">
+        <div class="question-card">
+          <p class="question-number">Question 3 of 3</p>
+          <h3>Is your code in a state where an outside developer could understand, contribute to, and maintain it?</h3>
+          <p class="subtext">
+            The initial release is only half the battle. Open source adoption depends on the community being able to actually pick up, use, and improve your code. If your codebase is poorly documented, tangled with internal dependencies, or simply unmaintainable by anyone outside your team, the community won't engage, and you'll absorb the costs of open sourcing without any of the benefits.<br><br>
+            <strong>The Netscape lesson:</strong> Netscape's botched open source release is a textbook example of this step being skipped. The code was in such poor shape that contributors couldn't work with it. It required a complete rewrite, and the project languished for years before re-emerging as Firefox. Don't skip this step.
+          </p>
+          <div class="btn-group">
+            <button class="btn-answer yes" data-answer="yes">Yes</button>
+            <button class="btn-answer no" data-answer="no">No</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Result -->
+      <div class="result-card yes hidden" id="result-yes">
+        <div class="result-icon">&#10003;</div>
+        <h3>Open source looks like a strong strategic move.</h3>
+        <p>Based on your answers, you have the ingredients in place. Releasing your software to the open source community isn't a loss of power, it's a gain of a different kind of influence. The ability to shape the industry and supercharge adoption is a strategic advantage that few other techniques hold.</p>
+        <p>For decision makers willing to see the possibilities in open source, it remains one of the most potent tools in the modern software leader's toolkit. Read the guidelines below to set yourself up for long-term success.</p>
+        <!-- <div class="research-quote">
+          <blockquote>"The greater a company's level of engagement, the more strategic its use of open source becomes. As a result, the company reaps higher value by participating in OSS projects."</blockquote>
+          <cite>— Li et al., <em>Systematic Literature Review of Commercial Participation in OSS</em>, ACM TOSEM (2025)</cite>
+        </div> -->
+      </div>
+
+      <!-- Result -->
+      <div class="result-card no hidden" id="result-no">
+        <div class="result-icon">&#8594;</div>
+        <h3>Open sourcing your main product may not be the right move, yet.</h3>
+        <p>The question of whether to engage in open source contribution requires careful consideration, but it need not be an intimidating one. The core of the decision is a value calculation, and right now, that calculation may not work in your favor.</p>
+        <p>You can still participate meaningfully in open source: contribute to projects your team depends on, open source non-core tools or utilities, or sponsor open source initiatives. Community goodwill and credibility don't require you to give away your core IP.</p>
+        <p>If your situation changes, your model evolves, your codebase matures, or the economics shift, the door isn't closed.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Guidelines -->
+  <section id="guidelines" class="hidden">
+    <div class="container">
+      <h2 class="section-title">How to Open Source Well</h2>
+      <p class="section-subtitle">How a company acts throughout its time in the OSS community has a massive effect on the benefits that initiative can provide. Researchers have explicitly called for "a clear cookbook about how to behave" for companies contributing to open source <em>(Li et al., ACM TOSEM, 2025)</em>. Here are the two rules that matter most.</p>
+
+      <div class="guideline">
+        <h3>Don't try to hold onto control.</h3>
+        <p>Organizations that try to hold onto too much control after nominally opening their product up to the community receive strong pushback. A clear example of this is Sun Systems' OpenOffice: acorporate control, and accusations of decisions made without the consultation of the community, resulted in developers fleeing to the competing LibreOffice. In most scenarios, attempts to retain control destroy a project's credibility and create a massive barrier to adoption.</p>
+        <div class="research-quote">
+          <blockquote>"In a mature community, [commercial control] may become a disadvantage because an open, free, and fair governance model becomes more critical for the participation of volunteers and other organizations."</blockquote>
+          <cite>— Li et al., <em>Systematic Literature Review of Commercial Participation in OSS</em>, ACM TOSEM (2025)</cite>
+        </div>
+      </div>
+
+      <div class="guideline">
+        <h3>Don't change the deal.</h3>
+        <p>A related, but meaningfully distinct, mistake is altering the license of an open source project after release. Companies do this for various, often justifiable, reasons, but the effect on community trust is severe. The Elasticsearch story is instructive: originally published with a permissive license, Elastic ran into trouble when cloud providers like AWS began offering their own hosted Elasticsearch solutions, undercutting Elastic's business. Elastic changed the license to respond, and faced significant community backlash as a result.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>Written by Andre Coullard - 2026</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
