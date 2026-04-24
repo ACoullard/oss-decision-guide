@@ -96,6 +96,55 @@ section {
 
 
 
+#how-it-works {
+  padding: 40px 0;
+  background: var(--neutral-light);
+  border-bottom: 1px solid var(--border);
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  list-style: none;
+}
+
+.step {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.step-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.875rem;
+  flex-shrink: 0;
+}
+
+.step strong {
+  display: block;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.step p {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
+
+
 .section-title {
   font-size: clamp(1.5rem, 3vw, 2rem);
   font-weight: 700;
@@ -242,15 +291,16 @@ section {
   background: #fff;
   cursor: pointer;
   transition: border-color 0.15s, background 0.15s, color 0.15s, opacity 0.2s;
+  opacity: 0.5;
 }
 
-.btn-answer.yes:hover {
+.btn-answer.yes {
   border-color: var(--green);
   background: var(--green-light);
   color: var(--green);
 }
 
-.btn-answer.no:hover {
+.btn-answer.no {
   border-color: #dc2626;
   background: #fef2f2;
   color: #dc2626;
@@ -258,21 +308,19 @@ section {
 
 .btn-answer.selected-yes {
   border-color: var(--green);
-  background: var(--green-light);
-  color: var(--green);
+  background: var(--green);
+  color: var(--green-light);
+  opacity: 1;
 }
 
 .btn-answer.selected-no {
   border-color: #dc2626;
-  background: #fef2f2;
-  color: #dc2626;
+  background: #dc2626;
+  color: #fef2f2;
+  opacity: 1;
 }
 
-.btn-answer.unselected {
-  opacity: 0.35;
-}
-
-.btn-answer.unselected:hover {
+.btn-answer:hover {
   opacity: 1;
 }
 
@@ -457,6 +505,12 @@ footer {
 }
 
 
+
+@media (max-width: 600px) {
+  .steps {
+    grid-template-columns: 1fr;
+  }
+}
 
 @media (max-width: 480px) {
   #hero {
